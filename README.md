@@ -1,2 +1,2 @@
 # Intro
-Introductory test repy.
+Introductory test repo.
