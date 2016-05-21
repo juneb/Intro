@@ -1,6 +1,6 @@
 <#
 	.SYNOPSIS
-		Gets the file encoding of a file.
+		Gets the file encoding of files.
 	
 	.DESCRIPTION
 		The Get-FileEncoding function determines encoding by looking at Byte Order Mark (BOM).
