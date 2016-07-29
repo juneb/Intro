@@ -1,0 +1,3 @@
+[submodule "PUGDemos"]
+	path = PUGDemos
+	url = https://github.com/pdxpowershell/PUGDemos
