@@ -38,7 +38,9 @@ Really, enough is enough.
 ## PARAMETERS
 
 ### Name
+Says hello to this name. Enter only one name. 
 
+Yes, that name is fine.
 
 ```yaml
 Type: String
@@ -52,7 +54,11 @@ Pipeline Input: false
 ```
 
 ### ID
+Enter the ID of the person you want to greet. 
 
+Everyone has an ID. 
+
+Or, they can't vote.
 
 ```yaml
 Type: Int32
