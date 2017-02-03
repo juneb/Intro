@@ -49,7 +49,10 @@ Really, enough is enough.
 ## PARAMETERS
 
 ### -Name
-@{Text=}
+Says hello to this name.
+Enter only one name.
+
+Yes, that name is fine.
 
 ```yaml
 Type: String
@@ -64,6 +67,12 @@ Accept wildcard characters: False
 ```
 
 ### -ID
+Enter the ID of the person you want to greet.
+
+Everyone has an ID.
+
+Or, they can't vote.
+
 ```yaml
 Type: Int32
 Parameter Sets: UNNAMED_PARAMETER_SET_2
