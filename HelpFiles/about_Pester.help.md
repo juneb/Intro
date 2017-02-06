@@ -1,14 +1,19 @@
 ﻿## TOPIC
+```
     about_Pester
+```
 
 ## SHORT DESCRIPTION
+```
     Pester is a test framework for Windows PowerShell. Use the Pester language 
     and its commands to write and run tests that verify that your scripts and 
     modules work as designed.
 
     Pester 3.4.0 supports Windows PowerShell 2.0 and greater.
+```
 
 ## LONG DESCRIPTION
+```
     Pester introduces a professional test framework for Windows PowerShell 
     commands. You can use Pester to test commands of any supported type, 
     including scripts, cmdlets, functions, CIM commands, workflows, and DSC 
@@ -25,9 +30,10 @@
     and that any code changes did not introduce errors. You can also add your 
     tests to the build scripts of a continuous integration system, and add new 
     tests at any time.
+```
 
-
- WHAT CAN PESTER TEST?
+### WHAT CAN PESTER TEST?
+```
     Pester is designed to support "test-driven development" (TDD), in which you 
     write and run tests before writing your code, thereby using the test as a 
     code specification. 
@@ -50,9 +56,10 @@
     with varied input without creating and maintaining fake entries in a file 
     or database, or commenting-out and inserting code just for testing. For more
     information, see about_Mocking.
+```
 
-
- THE PESTER LANGUAGE
+### THE PESTER LANGUAGE
+```
     To make it easier to write tests, Pester uses a language especially designed 
     for testing. This "domain-specific language" (DSL) hides the standard 
     verb-noun syntax of PowerShell commands. 
@@ -66,7 +73,7 @@
     the $allWidgets variables.
     
         It "gets all widgets" {
-	    Get-Widget \| Should Be $allWidgets
+	    Get-Widget | Should Be $allWidgets
         }
 
 
@@ -79,10 +86,10 @@
     -- about_Should  Compares actual to expected values. This topic also
                      lists all valid values of Be, which specify the
                      comparison operator used in the test.
+```
 
-
-
- HOW TO CREATE TEST FILES
+### HOW TO CREATE TEST FILES
+```
     To start using Pester, create a script and a test file that tests the 
     script. If you already have a script, you can create a test file for it.
 
@@ -101,11 +108,11 @@
     valid test. 
 
     For example, this command creates a New-Log.ps1 script and a 
-    New-Log.Tests.ps1 test script in the C:\\Scripts\\LogScripts directory.
+    New-Log.Tests.ps1 test script in the C:\Scripts\LogScripts directory.
         
-	New-Fixture -Path C:\\Scripts\\LogScripts -Name New-Log
+	New-Fixture -Path C:\Scripts\LogScripts -Name New-Log
 
-	    Directory: C:\\Scripts\\LogScripts
+	    Directory: C:\Scripts\LogScripts
 
 
         Mode                LastWriteTime     Length Name
@@ -120,17 +127,17 @@
     of the test script.
 
     For example:
-       . .\\New-Log.ps1
+       . .\New-Log.ps1
     -or-
-       . C:\\Scripts\\LogScripts\\New-Log.ps1
+       . C:\Scripts\LogScripts\New-Log.ps1
  
     
     Many Pester test files, including the files that New-Fixture creates, begin with these
     statements.
     
         $here = Split-Path -Parent $MyInvocation.MyCommand.Path
-        $sut = (Split-Path -Leaf $MyInvocation.MyCommand.Path) -replace '\\.Tests\\.', '.'
-        . "$here\\$sut"
+        $sut = (Split-Path -Leaf $MyInvocation.MyCommand.Path) -replace '\.Tests\.', '.'
+        . "$here\$sut"
 
     This code finds the current path of the test file at run time and saves it 
     in the $here variable. Then, it finds the script based on the path in $here. 
@@ -138,11 +145,11 @@
     the same directory as the test file.
 
     You can use any code in the test file that finds the script, but be sure 
-    that the test file has the required \*.Tests.ps1 file name extension.
+    that the test file has the required *.Tests.ps1 file name extension.
+```
 
-
-
- HOW TO RUN PESTER TESTS
+### HOW TO RUN PESTER TESTS
+```
     Pester tests are Windows PowerShell scripts (.ps1 files), so you can run 
     them at the command line, or in any editor.
 
@@ -166,8 +173,8 @@
     an optional code coverage test to verify that all lines in the script ran
     at least once during the tests.
 
-	Invoke-Pester -Script C:\\Tests\\New-Log.Tests.ps1 ` 
-          -Tag EventVwr -OutputFile .\\NewLogTests.xml -OutputFormat NUnitXml `
+	Invoke-Pester -Script C:\Tests\New-Log.Tests.ps1 ` 
+          -Tag EventVwr -OutputFile .\NewLogTests.xml -OutputFormat NUnitXml `
           -CodeCoverage
 
 
@@ -176,20 +183,21 @@
     use the Script parameter of Invoke-Pester to run only the New-Log.Tests.ps1 
     test.           
 
-        PS C:\\Scripts> Invoke-Pester -Script .\\New-Log.Tests.ps1
+        PS C:\Scripts> Invoke-Pester -Script .\New-Log.Tests.ps1
  
     For more information about Invoke-Pester, type: Get-Help Invoke-Pester
+```
 
-
- EXAMPLE
+### EXAMPLE
+```
     For your first Pester test, use the New-Fixture cmdlet to create a script 
     file and matching test file.    
 
     For example:
 
-        New-Fixture -Path C:\\TestPester -Name Get-Hello
+        New-Fixture -Path C:\TestPester -Name Get-Hello
 
-	    Directory: C:\\TestPester
+	    Directory: C:\TestPester
 
 
         Mode                LastWriteTime         Length Name
@@ -207,13 +215,13 @@
 
         Describe "Get-Hello" {
             It "does something useful" {
-                $true \| Should Be $false
+                $true | Should Be $false
             }
         }
 
     To run the test, use Invoke-Pester. For example,
 
-       Invoke-Pester C:\\TestPester
+       Invoke-Pester C:\TestPester
 
     When you run the test, it fails by design, because Should compares $True to 
     $False using the equal operator ("Be") and $True doesn't equal $False.  
@@ -227,7 +235,7 @@
 
         Describe "New-Log" {
             It "does something useful" {
-                Get-Hello \| Should Be 'Hello'
+                Get-Hello | Should Be 'Hello'
             }
         }
 
@@ -240,9 +248,10 @@
     (supports wildcards) and BeExactly (case sensitive), and BeLikeExactly 
     operators. For more, information about comparison operators in Pester, see 
     about_Should.
+```
 
-
- PESTER TEST OUTPUT
+### PESTER TEST OUTPUT
+```
     When you run a test, Pester use a variation of Write-Host to write 
     color-coded text to the console. You'll quickly learn to recognize the 
     purple test names and green (passing) and red (failing) test results with 
@@ -278,14 +287,15 @@
 
     To find the Pester tests in the Pester module directory, type:
 
-        dir <Pester_module_path>\\\*Tests.ps1 -Recurse
+        dir <Pester_module_path>\*Tests.ps1 -Recurse
 
        -or-
 
-	dir (Get-Module Pester -ListAvailable).ModuleBase -Include \*Tests.ps1 -Recurse
-
+	dir (Get-Module Pester -ListAvailable).ModuleBase -Include *Tests.ps1 -Recurse
+```
 
 ## SEE ALSO
+```
     Pester wiki: https://github.com/pester/pester/wiki
     Describe
     Context
@@ -295,3 +305,5 @@
     about_Mocking
     about_Should
     about_TestDrive
+```
+

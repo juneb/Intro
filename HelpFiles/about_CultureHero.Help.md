@@ -1,25 +1,38 @@
-﻿## TOPIC 
+﻿## TOPIC
+```
 	about_CultureHero
-	
-## SHORT DESCRIPTION	
+```
+
+## SHORT DESCRIPTION
+```
 	This is a short description of the file.
-	
+```
+
 ## LONG DESCRIPTION
+```
 	This is a long description of the file.
-	
+```
+
 ## NOTE
+```
 	This is a note.
-	
+```
+
 ## TROUBLESHOOTING NOTE
-	
-	
-	
+```
+```
+
 ## EXAMPLES
+```
 	Place examples here.
-	
+```
+
 ## KEYWORDS
-	
-	
-	
+```
+```
+
 ## SEE ALSO
+```
 	Place related topics here.
+```
+
