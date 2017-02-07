@@ -169,7 +169,7 @@ and must match the ModuleName that was used when setting up the Mock.
 
 ```yaml
 Type: String
-Parameter Sets: ParameterFilter
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -189,7 +189,7 @@ current Describe / Context block, as well as all child scopes of that block.
 
 ```yaml
 Type: String
-Parameter Sets: ParameterFilter
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -206,7 +206,7 @@ passed to the Times parameter is zero, the Exactly switch is implied.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: ParameterFilter
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -226,7 +226,7 @@ Assert-MockCalled SomeCommand -Times 0 -ParameterFilter { $something -ne $true }
 
 ```yaml
 Type: ScriptBlock
-Parameter Sets: 
+Parameter Sets: ExclusiveFilter
 Aliases: 
 
 Required: true
@@ -235,7 +235,7 @@ Default Value:
 Pipeline Input: false
 ```
 
-### <CommonParameters>
+### \<CommonParameters\>
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

@@ -41,7 +41,7 @@ Pipeline Input: false
 
 ```yaml
 Type: IDictionary
-Parameter Sets: Cmdlet
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -55,7 +55,7 @@ Pipeline Input: false
 
 ```yaml
 Type: Object
-Parameter Sets: Cmdlet
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -69,7 +69,7 @@ Pipeline Input: false
 
 ```yaml
 Type: String
-Parameter Sets: 
+Parameter Sets: Function
 Aliases: 
 
 Required: true
@@ -83,7 +83,7 @@ Pipeline Input: false
 
 ```yaml
 Type: String
-Parameter Sets: 
+Parameter Sets: Function
 Aliases: 
 
 Required: false
@@ -92,7 +92,7 @@ Default Value:
 Pipeline Input: false
 ```
 
-### <CommonParameters>
+### \<CommonParameters\>
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

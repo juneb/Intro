@@ -285,7 +285,7 @@ If you use both Tag and ExcludeTag, ExcludeTag takes precedence.
 
 ```yaml
 Type: String[]
-Parameter Sets: LegacyOutputXml
+Parameter Sets: (All)
 Aliases: Tags
 
 Required: false
@@ -308,7 +308,7 @@ If you use both Tag and ExcludeTag, ExcludeTag takes precedence
 
 ```yaml
 Type: String[]
-Parameter Sets: LegacyOutputXml
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -328,7 +328,7 @@ To suppress the host output, use the Quiet parameter.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: LegacyOutputXml
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -377,7 +377,7 @@ One of the following: Function or StartLine/EndLine
 
 ```yaml
 Type: Object[]
-Parameter Sets: LegacyOutputXml
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -392,7 +392,7 @@ integration where you need to make sure all tests passed.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: LegacyOutputXml
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -410,7 +410,7 @@ is written when you use the Output parameters.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: LegacyOutputXml
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -427,7 +427,7 @@ For more information on the options available, see the help for New-PesterOption
 
 ```yaml
 Type: Object
-Parameter Sets: LegacyOutputXml
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -441,7 +441,7 @@ Pipeline Input: false
 
 ```yaml
 Type: OutputTypes
-Parameter Sets: LegacyOutputXml
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -456,7 +456,7 @@ If this path is not provided, no log will be generated.
 
 ```yaml
 Type: String
-Parameter Sets: 
+Parameter Sets: NewOutputSet
 Aliases: 
 
 Required: true
@@ -471,7 +471,7 @@ LegacyNUnitXML.
 
 ```yaml
 Type: String
-Parameter Sets: 
+Parameter Sets: NewOutputSet
 Aliases: 
 
 Required: false
@@ -480,7 +480,7 @@ Default Value: NUnitXml
 Pipeline Input: false
 ```
 
-### <CommonParameters>
+### \<CommonParameters\>
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
