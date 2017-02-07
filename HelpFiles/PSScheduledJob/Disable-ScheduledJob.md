@@ -118,7 +118,7 @@ Returns an object representing the item with which you are working. By default, 
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: Definition
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -132,7 +132,7 @@ Disables the scheduled job with the specified identification number (ID). Enter 
 
 ```yaml
 Type: Int32
-Parameter Sets: 
+Parameter Sets: DefinitionId
 Aliases: 
 
 Required: true
@@ -146,7 +146,7 @@ Disables the scheduled jobs with the specified names. Enter the name of a schedu
 
 ```yaml
 Type: String
-Parameter Sets: 
+Parameter Sets: DefinitionName
 Aliases: 
 
 Required: true
@@ -155,7 +155,7 @@ Default Value: None
 Pipeline Input: false
 ```
 
-### <CommonParameters\>
+### \<CommonParameters\>
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

@@ -253,7 +253,7 @@ Specifies the number of days between occurrences on a daily schedule. For exampl
 
 ```yaml
 Type: Int32
-Parameter Sets: 
+Parameter Sets: Daily
 Aliases: 
 
 Required: false
@@ -267,7 +267,7 @@ Specifies a recurring daily job schedule. Use the other parameters in the Daily 
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: 
+Parameter Sets: Daily
 Aliases: 
 
 Required: true
@@ -281,7 +281,7 @@ Specifies the number of weeks between occurrences on a weekly job schedule. For 
 
 ```yaml
 Type: Int32
-Parameter Sets: 
+Parameter Sets: Weekly
 Aliases: 
 
 Required: false
@@ -297,7 +297,7 @@ Day names are converted to their integer values in the job trigger. When you enc
 
 ```yaml
 Type: DayOfWeek[]
-Parameter Sets: 
+Parameter Sets: Weekly
 Aliases: 
 
 Required: true
@@ -311,7 +311,7 @@ Specifies a recurring weekly job schedule. Use the other parameters in the Weekl
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: 
+Parameter Sets: Weekly
 Aliases: 
 
 Required: true
@@ -325,7 +325,7 @@ Starts the scheduled job when Windows starts.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: 
+Parameter Sets: AtStartup
 Aliases: 
 
 Required: true
@@ -339,7 +339,7 @@ Specifies the users who trigger an AtLogon start of a scheduled job. Enter the n
 
 ```yaml
 Type: String
-Parameter Sets: 
+Parameter Sets: AtLogon
 Aliases: 
 
 Required: false
@@ -353,7 +353,7 @@ Starts the scheduled job when the specified users log on to the computer. To spe
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: 
+Parameter Sets: AtLogon
 Aliases: 
 
 Required: true
@@ -362,7 +362,7 @@ Default Value: False
 Pipeline Input: false
 ```
 
-### <CommonParameters\>
+### \<CommonParameters\>
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

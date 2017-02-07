@@ -115,7 +115,7 @@ Specifies a name for the scheduled job. The name is also used for all started in
 
 ```yaml
 Type: String
-Parameter Sets: ScriptBlock
+Parameter Sets: (All)
 Aliases: 
 
 Required: true
@@ -137,7 +137,7 @@ To submit a hash table, use the following keys:
 
 ```yaml
 Type: ScheduledJobTrigger[]
-Parameter Sets: ScriptBlock
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -155,7 +155,7 @@ If the initialization script generates an error (even a non-terminating error), 
 
 ```yaml
 Type: ScriptBlock
-Parameter Sets: ScriptBlock
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -169,7 +169,7 @@ Runs the scheduled job in a 32-bit process.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: ScriptBlock
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -185,7 +185,7 @@ Type a user name, such as User01 or Domain01\\User01, or enter a PSCredential ob
 
 ```yaml
 Type: PSCredential
-Parameter Sets: ScriptBlock
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -218,7 +218,7 @@ Caution: Credential Security Service Provider (CredSSP) authentication, in which
 
 ```yaml
 Type: AuthenticationMechanism
-Parameter Sets: ScriptBlock
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -240,7 +240,7 @@ To submit a hash table, use the following keys. In the following hash table, the
 
 ```yaml
 Type: ScheduledJobOptions
-Parameter Sets: ScriptBlock
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -254,7 +254,7 @@ Specifies values for the parameters of the script that is specified by the FileP
 
 ```yaml
 Type: Object[]
-Parameter Sets: ScriptBlock
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -276,7 +276,7 @@ To delete the current execution history and job results, use the ClearExecutionH
 
 ```yaml
 Type: Int32
-Parameter Sets: ScriptBlock
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -290,7 +290,7 @@ Starts a job immediately, as soon as the Register-ScheduledJob cmdlet is run. Th
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: ScriptBlock
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -304,7 +304,7 @@ Pipeline Input: false
 
 ```yaml
 Type: TimeSpan
-Parameter Sets: ScriptBlock
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -318,7 +318,7 @@ Specifies a script that the scheduled job runs. Enter the path to a .ps1 file on
 
 ```yaml
 Type: String
-Parameter Sets: 
+Parameter Sets: FilePath
 Aliases: 
 
 Required: true
@@ -327,7 +327,7 @@ Default Value: None
 Pipeline Input: false
 ```
 
-### <CommonParameters\>
+### \<CommonParameters\>
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

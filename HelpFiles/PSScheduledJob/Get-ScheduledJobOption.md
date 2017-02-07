@@ -167,7 +167,7 @@ To get the identification numbers of scheduled jobs on the local computer or a r
 
 ```yaml
 Type: Int32
-Parameter Sets: 
+Parameter Sets: JobDefinitionId
 Aliases: 
 
 Required: true
@@ -183,7 +183,7 @@ To get the names of scheduled jobs on the local computer or a remote computer, u
 
 ```yaml
 Type: String
-Parameter Sets: 
+Parameter Sets: JobDefinitionName
 Aliases: 
 
 Required: true
@@ -192,7 +192,7 @@ Default Value: None
 Pipeline Input: True (ByPropertyName)
 ```
 
-### <CommonParameters\>
+### \<CommonParameters\>
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

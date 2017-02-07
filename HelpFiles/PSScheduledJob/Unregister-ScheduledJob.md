@@ -85,7 +85,7 @@ Deletes the scheduled job even if an instance of the job is running. By default,
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: Definition
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -99,7 +99,7 @@ Deletes the scheduled jobs with the specified identification numbers (ID). Enter
 
 ```yaml
 Type: Int32[]
-Parameter Sets: 
+Parameter Sets: DefinitionId
 Aliases: 
 
 Required: true
@@ -113,7 +113,7 @@ Deletes the scheduled jobs with the specified names. Enter the names of one or m
 
 ```yaml
 Type: String[]
-Parameter Sets: 
+Parameter Sets: DefinitionName
 Aliases: 
 
 Required: true
@@ -122,7 +122,7 @@ Default Value: None
 Pipeline Input: false
 ```
 
-### <CommonParameters\>
+### \<CommonParameters\>
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

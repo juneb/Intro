@@ -131,7 +131,7 @@ To submit a hash table, use the following keys.
 
 ```yaml
 Type: ScheduledJobTrigger[]
-Parameter Sets: ScriptBlock
+Parameter Sets: ScriptBlock, FilePath
 Aliases: 
 
 Required: false
@@ -149,7 +149,7 @@ If the initialization script generates an error, including a non-terminating err
 
 ```yaml
 Type: ScriptBlock
-Parameter Sets: ScriptBlock
+Parameter Sets: ScriptBlock, FilePath
 Aliases: 
 
 Required: false
@@ -163,7 +163,7 @@ Runs the scheduled job in a 32-bit process.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: ScriptBlock
+Parameter Sets: ScriptBlock, FilePath
 Aliases: 
 
 Required: false
@@ -179,7 +179,7 @@ Type a user name, such as User01 or Domain01\\User01, or enter a PSCredential ob
 
 ```yaml
 Type: PSCredential
-Parameter Sets: ScriptBlock
+Parameter Sets: ScriptBlock, FilePath
 Aliases: 
 
 Required: false
@@ -212,7 +212,7 @@ Caution: Credential Security Support Provider (CredSSP) authentication, in which
 
 ```yaml
 Type: AuthenticationMechanism
-Parameter Sets: ScriptBlock
+Parameter Sets: ScriptBlock, FilePath
 Aliases: 
 
 Required: false
@@ -234,7 +234,7 @@ To submit a hash table, use the following keys. In the following hash table, the
 
 ```yaml
 Type: ScheduledJobOptions
-Parameter Sets: ScriptBlock
+Parameter Sets: ScriptBlock, FilePath
 Aliases: 
 
 Required: false
@@ -250,7 +250,7 @@ If you specify multiple scheduled jobs, Set-ScheduledJob makes the same changes 
 
 ```yaml
 Type: ScheduledJobDefinition
-Parameter Sets: ScriptBlock
+Parameter Sets: (All)
 Aliases: 
 
 Required: true
@@ -272,7 +272,7 @@ To delete the current execution history and job results, use the ClearExecutionH
 
 ```yaml
 Type: Int32
-Parameter Sets: ScriptBlock
+Parameter Sets: ScriptBlock, FilePath
 Aliases: 
 
 Required: false
@@ -286,7 +286,7 @@ Returns an object representing the item with which you are working. By default, 
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: ScriptBlock
+Parameter Sets: (All)
 Aliases: 
 
 Required: false
@@ -300,7 +300,7 @@ Specifies values for the parameters of the script that is specified by the FileP
 
 ```yaml
 Type: Object[]
-Parameter Sets: ScriptBlock
+Parameter Sets: ScriptBlock, FilePath
 Aliases: 
 
 Required: false
@@ -314,7 +314,7 @@ Starts a job immediately, as soon as the Set-ScheduledJob cmdlet is run. This pa
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: ScriptBlock
+Parameter Sets: ScriptBlock, FilePath
 Aliases: 
 
 Required: false
@@ -328,7 +328,7 @@ Pipeline Input: false
 
 ```yaml
 Type: TimeSpan
-Parameter Sets: ScriptBlock
+Parameter Sets: ScriptBlock, FilePath
 Aliases: 
 
 Required: false
@@ -342,7 +342,7 @@ Specifies a script that the scheduled job runs. Enter the path to a .ps1 file on
 
 ```yaml
 Type: String
-Parameter Sets: 
+Parameter Sets: FilePath
 Aliases: 
 
 Required: false
@@ -360,7 +360,7 @@ This parameter does not affect the events that Task Scheduler writes to the Wind
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: 
+Parameter Sets: Execution
 Aliases: 
 
 Required: false
@@ -369,7 +369,7 @@ Default Value: False
 Pipeline Input: false
 ```
 
-### <CommonParameters\>
+### \<CommonParameters\>
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
