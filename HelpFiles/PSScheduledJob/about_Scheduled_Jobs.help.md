@@ -52,10 +52,11 @@
     NOTE: You can view and manage Windows PowerShell scheduled jobs
     in Task Scheduler, but the Windows PowerShell job and Scheduled
     Job cmdlets work only on scheduled jobs that are created in
-    Windows PowerShell. 
+    Windows PowerShell.
+```
 
-
-  SCHEDULED JOB CMDLETS   
+### SCHEDULED JOB CMDLETS
+```
     The PSScheduledJob module contains the following cmdlets.
 
     Register-ScheduledJob:       Creates a scheduled job.
